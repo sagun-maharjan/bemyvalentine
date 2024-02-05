@@ -1,0 +1,102 @@
+body{
+  font-family: 'Protest Riot', sans-serif !important;
+
+}
+
+.main-body{
+  min-height: 100vh;
+  background-color: rgb(247, 234, 237);
+}
+.main-part{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 80px 20px;
+  text-align: center;
+  transition: 4s ease-in;
+}
+.main-wrapper{
+  transition: 4s ease-in;
+}
+.main-part img{
+  height: 320px;
+}
+.main-part h1{
+  color: rgb(236, 94, 94);
+  display: block;
+  text-align: center;
+  font-size: 42px;
+  text-transform: capitalize;
+}
+.main-part .btn-wrap{
+  text-align: center;
+}
+.main-part .btn{
+  padding: 8px 12px;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px 10px;
+  font-family: 'Protest Riot', sans-serif !important;
+}
+.main-part .btn-later{
+  padding: 8px 12px;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px 10px;
+  font-family: 'Protest Riot', sans-serif !important;
+  background-color: rgb(207, 57, 62);
+  color: #fff;
+}
+.main-part .btn-simple{
+  background-color: rgb(73, 135, 73);
+}
+.btn-variable{
+  background-color: rgb(207, 57, 62);
+  color: #fff;
+}
+.main-part .btn-simple.new-style{
+  font-size: 36px;
+}
+.main-part .btn-simple.new-style2{
+  font-size: 82px;
+}
+.main-part .btn-simple.new-style3{
+  font-size: 120px;
+}
+
+.destroy{
+  visibility: hidden;
+  opacity: 0;
+}
+.main-part .hidden-img{
+  opacity: 0;
+  visibility: hidden;
+  height: 0px;
+}
+.main-part .hidden-text{
+  opacity: 0;
+  visibility: hidden;
+  font-size: 26px;
+}
+.main-part.broken .hidden-img{
+  opacity: 1;
+  transition: 6s ease-in-out;
+  height: 200px;
+  visibility: visible;
+  margin-top: 400px;
+}
+.main-part.happy .hidden-text{
+  opacity: 1;
+  transition: 6s ease-in-out;
+  visibility: visible;
+  margin-top: 400px;
+}
+.modal-body{
+  display: inline-block;
+  text-align: center;
+}

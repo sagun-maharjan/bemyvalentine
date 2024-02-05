@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Valentine</title>
+
+</head>
+<body class="main-body">
+  <section class="main-part">
+    
+    <img src="cupid1.gif">
+    <h1>Will you be my Valentine?</h1>
+    <div class="btn-wrap">
+      <button id="btn-main" class="btn btn-simple" data-toggle="modal" data-target="#myModal">Maybe 🤔</button>
+      <button id="btn-secondary" class="btn btn-variable">No 😆</button>
+    </div>
+    
+  </section>
+
+   <!-- The Modal -->
+   <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Seriously? Am I not good enough for you?</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <a href="second.html" type="button" class="btn btn-variable">Ok Just Let Me Give Me My Final Answer.</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <script>
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+      alert("Mobile Device Detected. For Better Experience Please View It In Desktop.")
+    }
+  </script>
+
+  <script>
+
+    let primaryBtn = document.getElementById("btn-main");
+    let secondaryBtn = document.getElementById("btn-secondary");
+
+    let count = 0;
+
+    secondaryBtn.onmouseover = function() {
+
+      let value1 = Math.random() * 500;
+      let value2 = Math.random() * 500;
+      secondaryBtn.style.position = "absolute";
+      console.log(value1);
+      console.log(value2);
+      secondaryBtn.style.left = value1 + "px";
+      secondaryBtn.style.top = value2 + "px";
+      count++;
+      if(count == 5){
+        alert("Really you hate me this much!")
+      }
+      if(count == 8){
+        alert("Come on give up already.")
+      }
+      if(count == 15){
+        alert("You should be tired now just press the other button.")
+      }
+    };
+
+
+
+    </script>
+</body>
+</html>
